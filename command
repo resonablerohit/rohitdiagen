@@ -17,6 +17,9 @@ Import-Module ./rohitazmap.psd1 -Force
 # login to azure, this is required for module to work
 Connect-AzAccount
 
+#  Test with one RG
+Export-RohitAzMap -ResourceGroup "Rohit_InfraOps" -OutputFormat png -Show:$false
+
 #################################################################################################################
 Get-Command -Module rohitazmap
 Export-rohitazmap -ResourceGroup `
