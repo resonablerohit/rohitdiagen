@@ -12,7 +12,7 @@ git clone https://github.com/resonablerohit/rohitdiagen.git
 cd ./rohitdiagen/
    
 # import the powershell module
-Import-Module rohitazmap.psd1 -Force
+Import-Module ./rohitazmap.psd1 -Force
 
 # login to azure, this is required for module to work
 Connect-AzAccount
