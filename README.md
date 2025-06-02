@@ -6,7 +6,6 @@
 - Auto-discovers Azure resources
 - Visualizes RG → VNet → Subnet → VMs → Dependencies
 - PNG/SVG output
-- Supports light/dark/neon themes
 
 ## Usage
 ```powershell
