@@ -1,4 +1,4 @@
-# rohitdiagen
+# Rohitdiagen
 
 🔷 Rohit Azure Map Generator — A PowerShell module to automatically generate professional Azure infrastructure diagrams using GraphViz and official Azure icons.
 
