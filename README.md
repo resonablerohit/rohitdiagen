@@ -8,5 +8,4 @@
 - PNG/SVG output
 
 ## Usage
-```powershell
-Export-rohitazmap -ResourceGroup "my-rg" -Theme light -Show -OutputFormat png
+To generate and render the diagram, run the provided commands in PowerShell. Diagram output will be tailored to the designated resource group.
