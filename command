@@ -1,4 +1,22 @@
-Import-Module /root/azure/azure_exports/rohitazmap/rohitazmap/rohitazmap.psd1 -Force
+# Ubuntu
+$ apt install graphviz
+
+# Fedora
+$ yum install graphviz
+
+# Debian
+$ apt install graphviz
+
+#################################################################################################################
+git clone https://github.com/resonablerohit/rohitdiagen.git
+   
+# import the powershell module
+Import-Module ./rohitazmap/rohitazmap/rohitazmap.psd1 -Force
+
+# login to azure, this is required for module to work
+Connect-AzAccount
+
+#################################################################################################################
 Get-Command -Module rohitazmap
 Export-rohitazmap -ResourceGroup `
 "abhay-tfstate", "ADDSLAB", "Akshay-RG", "Amber-RG", "Anurag-RG", "Ashish_RG", "Ayush-RG", `
@@ -16,6 +34,7 @@ Export-rohitazmap -ResourceGroup `
 "testVm2_group", "Update_manager", "Vikash_RG", "VikRg", "WSUS01-Test_group", "Yukta-RG" `
 -Theme Light -OutputFilePath "./diagrams/map.png" -Show:$false
 
+#############################################################################################
 Command2
 Export-rohitazmap -ResourceGroup `
 "abhay-tfstate", "ADDSLAB", "Akshay-RG", "Amber-RG", "Anurag-RG", "Ashish_RG", "Ayush-RG", `
